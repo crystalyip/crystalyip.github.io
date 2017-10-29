@@ -1,25 +1,16 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
 html, body {
-    background-color: black;
+    background-color: white;
     margin: 0;
     width: 100%;
     height: 120%;
 }
 
-h1 {
-    background: black;
-    background-height: 20px;
-    font-family: Tahoma, Verdana, Segoe, sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 500;
-    line-height: 26.4px;
-    text-align: right;
-    padding-right: 20px;
-}
 
 #clockbox {
-    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 150px;
     position: absolute;
     left: 0;
@@ -31,9 +22,10 @@ h1 {
 }
 
 #sticky {
-    height: 50px;
+    height: 60px;
     width: 100%;
-    background-color: #8b006d;
+    background-color: #00b7f3;
+    opacity: 60;
     color: #fff;
     font-size: 3em;
     text-align: right;
@@ -51,14 +43,15 @@ h1 {
 }
 
 h3 {
-    background: black;
+    background: #2a2a2a;
     background-height:20px;
     padding-left: 10px;
 }
 
 .projects{
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
     background-color: white;
-    min-height: 100%;
+    min-height: 30%;
     opacity: 0.75;
     background-attachment: fixed;
     background-position: center;
@@ -66,8 +59,16 @@ h3 {
     background-size: cover;
 }
 
+.box.highlight {
+    text-align: center;
+}
 
 .contact {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    letter-spacing: -0.025em;
+    padding-left: 20px;
+    padding-top: 20px;
     background-color: black;
     height: 150px;
     flex: 1;
@@ -75,16 +76,90 @@ h3 {
 
 
 .hero {
-    background-image: url('14188695_1003507563100739_4386447340076886615_o.jpg');
-    opacity: 0.55;
+    background-image: url('bg.jpg');
     text-shadow: 0 2px #000000;
-    font-family: 'Trebuchet MS', 'Helvetica';
-    min-height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: -0.025em;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    min-height: 60%;
 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.container{
+    height: 90px;
+    width: 100%;
+    background: #2a2a2a;
+}
+
+
+
+/* Containers */
+
+.projects {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: -0.025em;
+    font-size: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projects h3{
+    font-style: inherit;
+    font-size: 30px;
+}
+
+
+
+
+/* Grid */
+
+
+
+
+.row > * {
+    float: left;
+    box-sizing: border-box;
+}
+
+.row:after, .row:before {
+
+    clear: both;
+    height: 0;
+}
+
+
+
+
+.\34 u, .\34 u\24 {
+    width: 33.3333333333%;
+    clear: none;
+    margin-left: 0;
+}
+
+.\33 u, .\33 u\24 {
+    width: 25%;
+    clear: none;
+    margin-left: 0;
+}
+
+.\32 u, .\32 u\24 {
+    width: 16.6666666667%;
+    clear: none;
+    margin-left: 0;
+}
+
+
+
+
+
+
+
+
 
 
