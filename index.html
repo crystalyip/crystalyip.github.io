@@ -1,80 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Personal Website</title>
     <script src="jquery-3.1.0.min.js"></script>
+    <script src="index.js"></script>
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
-    <div class="container">
-    </div>
-    <div id="sticky-anchor"></div>
-    <div id="sticky">
-        ≡ &nbsp
-    </div>
-    <script src="sticky.js"></script>
-
-    <div class="hero">
-        <!--<p>Here is a <a href="cities.html">list</a>  of courses I have completed so far.</p>-->
-
-        Hello world, my name is Crystal.
-
-        <script type="text/javascript">
-
-            function GetClock(){
-                var d=new Date();
-                var nhour=d.getHours(),nmin=d.getMinutes(),ap;
-                if(nhour==0){ap=" AM";nhour=12;}
-                else if(nhour<12){ap=" AM";}
-                else if(nhour==12){ap=" PM";}
-                else if(nhour>12){ap=" PM";nhour-=12;}
-
-                if(nmin<=9) nmin="0"+nmin;
-
-                document.getElementById('clockbox').innerHTML=""+nhour+":"+nmin+ap+"";
-            }
-
-            window.onload=function(){
-                GetClock();
-                setInterval(GetClock,1000);
-            }
-        </script>
-        <div id="clockbox"></div>
-    </div>
-    <div class="projects">
-
-        <section class="wrapper style1">
-
-            <div class="row 200%">
-                <section class="4u 12u(narrower)">
-                    <div class="box highlight">
-                        <i class="icon"></i>
-                        <h3 style="color:white">CSC207</h3>
-                        <p>Software Design</p>
-                    </div>
-                </section>
-                <section class="4u 12u(narrower)">
-                    <div class="box highlight">
-                        <i class="icon"></i>
-                        <h3 style="color:white">CSCB36</h3>
-                        <p>Computer Theory</p>
-                    </div>
-                </section>
-                <section class="4u 12u(narrower)">
-                    <div class="box highlight">
-                        <i class="icon"></i>
-                        <h3 style="color:white">CSC384</h3>
-                        <p>Artifical Intelligence (Upcoming)</p>
-                    </div>
-                </section>
-            </div>
-        </section>
-    </div>
-    <div class="contact" style="color:white">
-        <p1>Contact: </br> crystal.yip@mail.utoronto.ca<br/><br/>University of Toronto,  St.George<br/><br/>Toronto, ON</p1>
-    </div>
+    <h1>
+        c r y s t a l<br>
+        <span>&emsp;</span>t u n g <br>
+        <span>&emsp;</span><span>&emsp;</span>y i p
+    </h1>
+    <img class="random" width="30%" height="30%" src="fish1.png">
+    <img class="random" width="30%" height="30%" src="fish2.png">
+    <img class="random" width="30%" height="30%" src="fish3.png">
+    <img class="random" width="30%" height="30%" src="fish4.png">
+    <img class="random" src="shark.png">
+    
+   
+ 
+ 
 
 </body>
 </html>
