@@ -72,7 +72,7 @@ $(document).ready(function() {
   });
 
   document.getElementById("fish3").addEventListener('click', function(){
-    window.open('https://github.com/crystalyip');
+    window.open('https://github.com/fishnyips');
   });
 
   document.getElementById("shark").addEventListener('click', function(){
