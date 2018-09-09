@@ -55,7 +55,7 @@ html, body {
     60%{ transform: translate(+100%, +55%) rotate(+20deg)}
   }
 
-#talking{
+#talking{ 
     float: bottom;
     font-family: italics;
 }
