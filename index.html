@@ -5,27 +5,35 @@
     <meta charset="UTF-8">
     <title>Personal Website</title>
     <script src="jquery-3.1.0.min.js"></script>
-    <script src="index.js"></script>
+    
+    <script src="jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery-ui.min">
     <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 <body>
-    <h1>
-        c r y s t a l<br>
-        <span>&emsp;</span>t u n g <br>
-        <span>&emsp;</span><span>&emsp;</span>y i p
-    </h1>
-    <img class="random" width="30%" height="30%" src="images/fish1.png">
-    <img class="random" width="30%" height="30%" src="images/fish2.png">
-    <img class="random" width="30%" height="30%" src="images/fish3.png">
-    <img class="random" width="30%" height="30%" src="images/fish4.png">
-    <img class="random" src="images/shark.png">
     
+        
    
- 
- 
+    <img class="random" width="30%" height="30%" style="display:none" id="fish1" src="images/fish1.png">
+    <img class="random" width="30%" height="30%" style="display:none" id="fish2" src="images/fish2.png">
+    <img class="random" width="30%" height="30%" style="display:none" id="fish3" src="images/fish3.png">
+    <img class="random" width="30%" height="30%" style="display:none" id="fish4" src="images/fish4.png">
+    <img class="random" style="display:none" id="shark" src="images/shark.png">
+    <span id="text">  
+    <h1>
+            c r y s t a l<br>
+            <span>&emsp;</span>t u n g <br>
+            <span>&emsp;</span><span>&emsp;</span>y i p
+        </h1><br></span>
+        
+        <h3 id="res">resume</h3><br>
+        <h3 id="lin">linkedin</h3><br>
+        <h3 id="git">github</h3><br>
+        <h3 id="sharky">shark</h3><br>
+        <h3 id="fishies">fishies</h3><br><br>
+        <span id=talking style="display:none"><h1>"...click on me :D"</h1></span>
 
+        <script src="index.js"></script>
 </body>
 </html>
