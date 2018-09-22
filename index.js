@@ -1,10 +1,11 @@
 $(document).ready(function() {
-    var bodyWidth = 900;
+    var bodyWidth = parseInt(document.getElementById("holder").style.width);
+    console.log(bodyWidth);
     var bodyHeight = 370;
     $('.random').each(function(idx, img) {
       var randPosX = 0;
       var randPosY = 0;
-      randPosX = Math.floor((Math.random() * bodyWidth));
+      randPosX = Math.floor((Math.random() * bodyWidth) + parseInt(document.getElementById("info").style.width));
       randPosY = Math.floor((Math.random() * bodyHeight));
       
       $(img).css('left', randPosX);
@@ -37,13 +38,20 @@ $(document).ready(function() {
     $('.random').each(function(idx, img) {
       
       if ($(img).attr('id') != idName){
-        $(img).fadeOut();
+          $(img).fadeOut();
       } else {
-        $(img).fadeIn();
-        
+          $(img).removeClass('swimL');
+          $(img).removeClass('swimR');
+          $(img).fadeIn();
+          var talking = document.getElementById('talking');
+          var l = parseInt(img.style.left) + 200;
+          var t = parseInt(img.style.top) + 300;
+          talking.style.left=l.toString()+"px";
+          talking.style.top=t.toString()+"px";
+          $(talking).fadeIn(2000);
       }
     });
-    $('#talking').fadeIn(2000);
+
   }
   function allFish(){
     $('#talking').fadeOut(1000);
